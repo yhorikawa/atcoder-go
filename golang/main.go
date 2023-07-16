@@ -1,6 +1,27 @@
 package main
 
+import (
+	"bufio"
+	"os"
+	"strconv"
+)
+
+var sc = bufio.NewScanner(os.Stdin)
+var out = bufio.NewWriter(os.Stdout)
+
 func main() {
+	defer out.Flush()
+}
+
+func nextInt() int {
+	sc.Scan()
+	i, _ := strconv.Atoi(sc.Text())
+	return i
+}
+
+func nextString() string {
+	sc.Scan()
+	return sc.Text()
 }
 
 func abs(v int) int {
