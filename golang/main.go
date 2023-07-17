@@ -11,6 +11,8 @@ var out = bufio.NewWriter(os.Stdout)
 
 func main() {
 	defer out.Flush()
+
+	sc.Split(bufio.ScanWords) // スペース区切りの設定
 }
 
 func nextInt() int {
