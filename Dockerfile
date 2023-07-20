@@ -21,6 +21,8 @@ RUN acc config default-test-dirname-format test \
   && acc config default-task-choice all \
   && acc config default-template golang
 
+RUN echo 'alias ojt="oj t -c \"go run ./main.go\" -d test/"' >> ~/.bashrc
+
 ENV GO111MODULE on
 WORKDIR /go/src/work
 
