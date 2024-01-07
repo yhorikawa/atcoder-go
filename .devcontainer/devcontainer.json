@@ -9,7 +9,13 @@
 			"version": "1.20.6"
 		},
 		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/python:1": {}
+		"ghcr.io/devcontainers/features/python:1": {},
+		"ghcr.io/devcontainers-contrib/features/npm-package:1": {
+			"package": "atcoder-cli"
+		},
+		"ghcr.io/akhildevelops/devcontainer-features/pip:0": {
+			"PACKAGES": "online-judge-tools"
+		}
 	},
 
 	"postCreateCommand": "./.devcontainer/postCreateCommand.sh"
