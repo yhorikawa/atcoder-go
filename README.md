@@ -11,3 +11,13 @@ acc check-oj
 ```sh
 oj t -c "go run ./main.go" -d test/
 ```
+
+## New Contest
+```sh
+acc new abc001
+```
+
+## Submit
+```sh
+acc s
+```
