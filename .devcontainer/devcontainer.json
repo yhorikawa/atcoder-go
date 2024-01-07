@@ -18,7 +18,7 @@
 		}
 	},
 
-	"postCreateCommand": "./.devcontainer/postCreateCommand.sh"
+	"postCreateCommand": "cp -r atcoder-cli-nodejs ~/.config"
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
