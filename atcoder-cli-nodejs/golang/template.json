@@ -1,7 +1,8 @@
 {
   "task": {
       "program": [
-          "main.go"
+          "main.go",
+          "main_test.go"
       ],
       "submit": "main.go"
   }
