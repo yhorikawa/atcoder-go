@@ -9,6 +9,24 @@
         "kind": "test",
         "isDefault": true
       }
+    },
+    {
+      "label": "acc submit",
+      "type": "shell",
+      "command": "cd ${fileDirname} && acc s",
+      "problemMatcher": [],
+    },
+    {
+      "label": "acc new",
+      "type": "shell",
+      "command": "cd ${workspaceFolder}/contest && acc new ${input:contest-id}"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "contest-id",
+      "type": "promptString",
+      "description": "Contest ID"
     }
   ]
 }
