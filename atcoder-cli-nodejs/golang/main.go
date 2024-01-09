@@ -20,7 +20,7 @@ func solve(r io.Reader, w io.Writer) {
 
 	sc.Split(bufio.ScanWords) // スペース区切りの設定
 	s := nextString(sc)
-	fmt.Fprint(out, s)
+	fmt.Fprintln(out, s)
 }
 
 func nextInt(sc *bufio.Scanner) int {
