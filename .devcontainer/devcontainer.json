@@ -4,17 +4,21 @@
 	"name": "Debian",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:bullseye",
+	"remoteEnv": {
+		"PATH": "${containerEnv:PATH}:/opt/pip/bin"
+	},
 	"features": {
 		"ghcr.io/devcontainers/features/go:1": {
 			"version": "1.20.6"
 		},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/devcontainers-contrib/features/npm-package:1": {
+		"ghcr.io/devcontainers-extra/features/npm-package:1": {
 			"package": "atcoder-cli"
 		},
-		"ghcr.io/akhildevelops/devcontainer-features/pip:0": {
-			"PACKAGES": "online-judge-tools"
+		"ghcr.io/deep-space-cartel/devcontainers-features/pip:1": {
+			"packages": "online-judge-tools",
+			"location": "/opt/pip"
 		}
 	},
 
